@@ -35,7 +35,7 @@ public class Formulario {
         if (acao == JOptionPane.OK_OPTION) {
             try {
                 Pessoa pessoa = this.criarPessoa();
-                String mensagem = "O seu IMC é: " + pessoa.calcularImc();
+                String mensagem = "O seu IMC é: " + pessoa.calcularImc() + " (" + pessoa.getSituacao() + ")";
                 JOptionPane.showMessageDialog(null, mensagem);
             } catch (FormularioInvalidoException e) {
                 String mensagem = e.getMessage();

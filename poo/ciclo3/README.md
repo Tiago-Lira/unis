@@ -1,18 +1,11 @@
-## Getting Started
+## IMC
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Ler dois valores na interface gráfica: Peso em "Kg" e Altura em "Cm"
 
-## Folder Structure
+De posse dos dados deve ser calculado o Índice de Massa Corporal (IMC) do usuário conforme indicado no seguinte link ( http://gg.gg/e29vt )
 
-The workspace contains two folders by default, where:
+Após efetuar o calculo a aplicação deve mostrar ao usuário informações sobre seu resultado de IMC, informando o seu resultado e a sua classificação
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O seu software construído para essa atividade, deve ser postado no Github conforme aprendido nas atividades anteriores.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O link de um repositório .GIT deve ser postado no fórum atribuído à essa atividade.
