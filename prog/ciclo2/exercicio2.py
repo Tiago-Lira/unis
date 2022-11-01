@@ -26,9 +26,9 @@ b = args.b
 c = args.c
 
 if a > (b + c):
-    print(f"Não é um triangulo.\na: {args.a}\nb: {args.b}\nc: {args.c}")
+    print("Não é um triangulo.\na: {}\nb: {}\nc: {}".format(a, b, c))
 else:
     # https://pt.wikipedia.org/wiki/Teorema_de_Herão
     s = (a + b + c) / 2
     area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
-    print(f"A area do triangulo é: {area:.2f}")
+    print("A area do triangulo é: {:.2f}".format(area))

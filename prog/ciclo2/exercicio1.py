@@ -23,4 +23,4 @@ args = app.parse_args()
 anos = args.numero_de_dias // 365
 meses = (args.numero_de_dias % 365) // 30
 dias = (args.numero_de_dias % 365) % 30
-print(f"{anos} anos, {meses} meses, {dias} dias.")
+print("{} anos, {} meses, {} dias.".format(anos, meses, dias))

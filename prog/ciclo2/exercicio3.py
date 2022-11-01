@@ -19,4 +19,4 @@ n2 = args.n2
 n3 = args.n3
 
 menor = min(n1, n2, n3)
-print(f"O menor número é: {menor}")
+print("O menor número é: {}".format(menor))

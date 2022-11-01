@@ -12,6 +12,8 @@
    a) Receba uma frase como parâmetro.
    b) Retorne uma nova frase com cada palavra com as letras invertidas.
 
+Todos os programas funcionam com python 3. Para mais informações de como rodar os programas, executar o arquivo com a opção -h:
+
 ```bash
-> python exercicio1.py
+> python3 {EXERCICIO}.py -h
 ```
