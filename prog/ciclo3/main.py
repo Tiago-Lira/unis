@@ -23,8 +23,9 @@ def calculate():
         resultado_lb.config(text="O peso tem que ser maior que zero.")
         return
 
+    altura = altura / 100
     imc = peso / (altura * altura)
-    resultado_lb.config(text=f"IMC é {imc}")
+    resultado_lb.config(text=f"IMC é {imc:.2f}")
 
 
 def restart():
