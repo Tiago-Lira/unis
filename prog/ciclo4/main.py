@@ -53,7 +53,7 @@ class CalculadoraIMC:
 
     def _imprimir(self, resultado: ResultadoIMC):
         print(f"Nome: {resultado.nome}")
-        print(f"Altura: {resultado.altura}cm")
+        print(f"Altura: {resultado.altura}m")
         print(f"Peso: {resultado.peso}kg")
         print(f"IMC: {resultado.imc}")
 
