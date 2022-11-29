@@ -18,24 +18,24 @@ class ResultadoIMC(Base):
 
 class CalculadoraIMC:
     def calcular(self, args, session: orm.Session):
-        altura = args.altura_cm
-        peso = args.peso_kg
+        altura_cm = args.altura_cm
+        peso_kg = args.peso_kg
         nome = args.nome
 
-        if altura <= 0:
+        if altura_cm <= 0:
             print("A altura tem que ser maior que zero.")
             return
 
-        if peso <= 0:
+        if peso_kg <= 0:
             print("O peso tem que ser maior que zero.")
             return
 
-        altura = altura / 100
-        imc = round(peso / (altura * altura), 2)
+        altura_m = altura_cm / 100
+        imc = round(peso_kg / (altura_m * altura_m), 2)
         resultado = ResultadoIMC(
             nome=nome,
-            altura=altura,
-            peso=peso,
+            altura=altura_cm,
+            peso=peso_kg,
             imc=imc,
         )
         session.add_all([resultado])
@@ -53,7 +53,7 @@ class CalculadoraIMC:
 
     def _imprimir(self, resultado: ResultadoIMC):
         print(f"Nome: {resultado.nome}")
-        print(f"Altura: {resultado.altura}m")
+        print(f"Altura: {resultado.altura}cm")
         print(f"Peso: {resultado.peso}kg")
         print(f"IMC: {resultado.imc}")
 

@@ -3,6 +3,7 @@
 Esta atividade depende da instalação do SQLAlchemy e foi testada com python 3.10.
 
 ### Instalação
+
 É necessário criar um virtualenv para instalar as dependências.
 
 ```bash
@@ -10,6 +11,7 @@ Esta atividade depende da instalação do SQLAlchemy e foi testada com python 3.
 ```
 
 ### Comandos
+
 ```bash
 (venv) ➜  ciclo4 git:(main) python main.py
 usage: main.py [-h] {calcular,listar_resultados} ...
@@ -20,6 +22,7 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
 ```
+
 ### Calculando o IMC
 
 ```bash
@@ -27,7 +30,7 @@ options:
 Resultado:
 -------------
 Nome: Tiago
-Altura: 1.71cm
+Altura: 171cm
 Peso: 80kg
 IMC: 27.36
 ```
@@ -39,7 +42,7 @@ IMC: 27.36
 Resultados:
 -------------
 Nome: Tiago
-Altura: 1.71cm
+Altura: 171cm
 Peso: 80.0kg
 IMC: 27.36
 -------------
